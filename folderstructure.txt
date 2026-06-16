@@ -1,0 +1,19 @@
+Folder Structure (important — communicate this):
+src/
+  components/
+    module1-patient/
+    module2-appointment/
+  pages/
+  hooks/
+  context/
+  services/     ← all API call functions go here
+  utils/
+
+for backend 
+backend/
+  routes/
+  controllers/
+  models/
+  middleware/
+  config/
+  Environment variables: Create a .env.example file so everyone knows what variables to set. Never commit .env.

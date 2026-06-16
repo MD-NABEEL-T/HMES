@@ -1,0 +1,14 @@
+2. Tech Stack
+MERN is a solid choice. Here's what I'd add:
+Frontend: React + Vite + Tailwind CSS + shadcn/ui (for pre-built hospital-grade UI components like tables, modals, forms — saves enormous time)
+Backend: Node.js + Express.js
+Database: MongoDB (Mongoose) — good for flexible patient/medical records schema
+What to add on top of MERN:
+
+Redis — for session caching and queue/token management (Module 2 & 5 need real-time token numbers)
+Socket.io — for live dashboard updates (patients waiting, doctor availability)
+Cloudinary or AWS S3 — for lab report uploads (Module 9)
+Nodemailer + Twilio or MSG91 — for SMS/WhatsApp follow-up reminders (Module 13)
+PDF generation: react-pdf or pdfkit for prescriptions, bills
+
+This stack is realistic for an intern team and widely documented.

@@ -1,0 +1,12 @@
+3. Authentication
+Use JWT (JSON Web Tokens) with role-based access control (RBAC).
+Here's why and how:
+
+The PDF has 10 roles (Super Admin, Hospital Admin, Receptionist, Doctor, Nurse, Lab Tech, Pharmacist, Accountant, Driver, Patient)
+Each role gets different module access — this is exactly what RBAC solves
+Use: jsonwebtoken + bcryptjs on the backend
+Store: Access token in memory (React state/context), Refresh token in httpOnly cookie
+Middleware: A single protect + authorize(roles...) middleware on every route
+
+Don't use session-based auth — it doesn't scale well for a SaaS with multiple branches.
+Optional but good: Add Google OAuth later for staff login convenience using passport.js.
