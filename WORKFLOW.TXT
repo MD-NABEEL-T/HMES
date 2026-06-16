@@ -1,0 +1,127 @@
+DAY 1: Folder Structure + Env Setup + GitHub
+Frontend Tasks:
+
+Create folder structure as defined
+Create .env.example for frontend
+Commit to GitHub
+
+Backend Tasks:
+
+Create folder structure
+Create .env.example for backend
+Set up MongoDB Atlas cluster
+Commit to GitHub
+
+Time: 2-3 hours
+
+DAY 2: Auth Backend (Core)
+Backend Team Does:
+
+User model (email, password, role, tenantId)
+Auth routes (signup, login, refresh-token)
+Auth controller (validate, hash password with bcrypt, JWT generation)
+Auth middleware (protect routes, verify JWT)
+Postman collection for testing
+
+Time: Full day (4-6 hours)
+Output: API endpoints working:
+POST /api/v1/auth/signup
+POST /api/v1/auth/login
+POST /api/v1/auth/refresh-token
+GET /api/v1/auth/profile (protected)
+
+DAY 3: Auth Frontend + Hero Page
+Frontend Tasks:
+
+Auth Context (store user + token in memory)
+Axios instance with JWT interceptor
+Protected Route wrapper
+Login page (form that calls backend)
+Hero/Landing page
+Basic layout (sidebar + navbar structure)
+
+Time: Full day (4-6 hours)
+Output:
+
+Login works end-to-end
+Hero page shows
+Sidebar appears after login (empty for now)
+
+
+DAY 4: Role-Based Sidebar + Dashboard Skeleton
+Frontend + Backend:
+
+Permissions seeding (SUPER_ADMIN, HOSPITAL_ADMIN, DOCTOR, RECEPTIONIST roles)
+Sidebar that changes based on role
+Empty Dashboard page (will be filled later)
+Route structure for modules
+
+Time: 3-4 hours
+Output: Different roles see different sidebar menus
+
+DAYS 5-6: Split Into Module Teams
+Once auth is done, both teams split:
+Team A (3 devs):
+
+Day 5: Module 1 (Patient Management)
+
+Patient Model → Routes → Controller → Frontend forms → Patient List table
+
+
+Day 6: Module 2 (Appointment Management)
+
+Appointment Model → Routes → Controller → Frontend booking form → Appointment List
+
+
+
+Team B (3 devs):
+
+Day 5: Module 3 (Doctor Management)
+
+Doctor Model → Routes → Controller → Doctor List → Doctor Profile
+
+
+Day 6: Module 5 (OP Management)
+
+OP Queue screen (list of patients waiting)
+Call Next Patient button
+
+
+
+UI Guy (1 dev):
+
+Days 1-6: Build reusable components
+
+Button, Input, Modal, Table, Form elements
+Lock in primary/secondary colors in Tailwind config
+Navbar + Sidebar templates
+
+
+
+Testing Guy (1 dev):
+
+Day 1-2: Learn Postman, create collection template
+Day 3+: Test each API endpoint, document bugs in GitHub Issues
+
+
+DAY 7: UI Polish + Integration
+
+UI guy reviews all pages, ensures color consistency
+Testing guy runs full test suite on Postman
+Fix bugs found during testing
+
+
+DAYS 8-9: Remaining Core Modules
+
+Module 7 (Prescriptions) — 1 day
+Module 14 (Role & Permission) — 1 day
+Module 15 (Dashboard with widgets) — 1 day
+
+
+WEEK 2: Advanced Modules (if time allows)
+
+Module 8 (Pharmacy)
+Module 9 (Lab)
+Module 11 (Finance)
+Module 12 (Follow-up — without BullMQ, just manual for now)
+
